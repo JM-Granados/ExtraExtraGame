@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "House",
+  "name": "obj_house",
   "spriteId": {
     "name": "spr_house",
     "path": "sprites/spr_house/spr_house.yy",

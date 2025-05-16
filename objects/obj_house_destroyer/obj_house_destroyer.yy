@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "House_roof",
+  "name": "obj_house_destroyer",
   "spriteId": {
-    "name": "spr_house_roof",
-    "path": "sprites/spr_house_roof/spr_house_roof.yy",
+    "name": "spr_house_destroyer",
+    "path": "sprites/spr_house_destroyer/spr_house_destroyer.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,8 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_house","path":"objects/obj_house/obj_house.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_house_roof","path":"objects/obj_house_roof/obj_house_roof.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
