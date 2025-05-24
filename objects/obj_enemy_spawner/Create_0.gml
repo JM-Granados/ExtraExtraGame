@@ -21,5 +21,5 @@ for (var i = 0; i < 3; i++) {
     enemy.x = -sprite_get_width(enemy.sprite_index) * enemy.image_xscale;
 
     // Set speed
-    enemy.hspeed = 1;
+    enemy.hspeed = 3;
 }
