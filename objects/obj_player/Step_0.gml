@@ -2,13 +2,34 @@
 // You can write your code in this editor
 
 moviendo = false;
+
+//Chequear qué tecla se presiona
 var key_up = keyboard_check(ord("W"));
 var key_down = keyboard_check(ord("S"));
 var key_left = keyboard_check(ord("A"));
 var key_right = keyboard_check(ord("D"));
 
+//Lomites de movimiento
+// Aplicar límites horizontales
+if (x < limite_izquierdo + margen_sprite) {
+    x = limite_izquierdo + margen_sprite;
+} 
+else if (x > limite_derecho - margen_sprite) {
+    x = limite_derecho - margen_sprite;
+}
 
+// Aplicar límites verticales
+if (y < limite_superior + margen_sprite) {
+    y = limite_superior + margen_sprite;
+} 
+else if (y > limite_inferior - margen_sprite) {
+    y = limite_inferior - margen_sprite;
+}
+
+
+//Registrar movimientos
 // Actualizar última tecla presionada en cada eje
+//Ejes verticales
 if (key_up) {
     last_vertical = "up";
     moviendo = true;
@@ -21,6 +42,7 @@ else {
     last_vertical = "none";
 }
 
+//Ejes horizontales
 if (key_left) {
     last_horizontal = "left";
     moviendo = true;
@@ -45,13 +67,21 @@ if (last_horizontal != "none") {
     else x += velocidad;
     sprite_index = (last_horizontal == "left") ? spr_main_walk_left : spr_main_walk_right;
 }
+else {
+	x -= map_speed;
+}
+
 
 // Prioridad: Si hay movimiento en ambos ejes, mostrar dirección horizontal
 if (last_horizontal != "none" && last_vertical != "none") {
     sprite_index = (last_horizontal == "left") ? spr_main_walk_left : spr_main_walk_right;
 }
+else if (last_horizontal == "none" && moviendo == false) {
+    sprite_index = spr_main_walk_left; // O usa un sprite específico para "ser empujado"
+}
 
-// Animación
+
+// Animación y sonido
 if (moviendo) {
     image_speed = anim_velocidad;
 	
@@ -75,6 +105,7 @@ if (moviendo) {
 	ultimo_frame_paso = -1; // Resetear al parar
 }
 
+//Disparar periódico
 // Reducir cooldown
 if (contador_cooldown > 0) contador_cooldown -= 1;
 
@@ -83,7 +114,7 @@ if (keyboard_check_pressed(ord("T")) && contador_cooldown <= 0) {
     contador_cooldown = cooldown_lanzar;
 	
     // Crear el periódico
-    var newspaper = instance_create_layer(x, y, "Instances", obj_throwPaper);
+    var newspaper = instance_create_layer(x, y, "House_instances", obj_throwPaper);
 	
 	// Ajustar posición inicial (evitar que aparezca dentro del jugador)
     newspaper.x = x - 20;  // Offset izquierdo
@@ -92,3 +123,6 @@ if (keyboard_check_pressed(ord("T")) && contador_cooldown <= 0) {
 	// Efecto de sonido
     audio_play_sound(snd_paper, 1, false);
 }
+
+
+//Entregar periódicos
