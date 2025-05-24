@@ -3,7 +3,7 @@
 
 hspeed = v_speed
 
-if (place_meeting(x, y, obj_temp_player)) {
+if (place_meeting(x, y, obj_player)) {
 	if (keyboard_check_pressed(ord("U")) || keyboard_check_pressed(ord("u"))) {
 		// does receive help
 		if (r < 0.5) {
@@ -34,6 +34,17 @@ if (place_meeting(x, y, obj_temp_player)) {
 			instance_create_layer(neighbor.x, neighbor.y, layer, obj_help_dialog)
 			// After 3s the dialog is deleted 
 			alarm[0] = room_speed * 3;
+			
+			// Destroys an enemy
+			var enemy_count = instance_number(obj_enemy);
+			if (enemy_count > 0) {
+			    var random_enemy = instance_find(obj_enemy, irandom(enemy_count - 1));
+			    with (random_enemy) {
+			        instance_create_layer(random_enemy.x, random_enemy.y, layer, obj_puff);
+			        instance_destroy();
+			    }
+			}
+
 		
 			// Confidence increases
 			with (obj_confidence_manager) {
