@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//MAPA
+// Límites del mapa (ajusta según el tamaño de tu room)
+limite_izquierdo = 0;          // Borde izquierdo de la pantalla
+limite_derecho = room_width;   // Borde derecho de la room
+limite_superior = 380;           // Borde superior
+limite_inferior = 866; // Borde inferior
+
+// Margen para evitar que el sprite se salga parcialmente
+margen_sprite = 32; // Ajusta según el tamaño de tu sprite
+
+// Velocidad del mapa
+map_speed = 4;
+
+
+//Jugador
 // Velocidad de movimiento
 velocidad = 5;
 
@@ -9,14 +24,17 @@ anim_velocidad = 0.4
 // Estado para controlar si se mueve o no
 moviendo = false;
 
-last_horizontal = "none";   // Para rastrear última tecla horizontal
-last_vertical = "none";     // Para rastrear última tecla vertical
+// Para rastrear última tecla horizontal
+last_horizontal = "none";   
+// Para rastrear última tecla vertical
+last_vertical = "none";     
 
-cooldown_lanzar = 30;  // Frames de espera entre lanzamientos
+// Frames de espera entre lanzamientos
+cooldown_lanzar = 30;  
 contador_cooldown = 0;
 
-paso_frames = [1]; // Frames donde el pie toca el suelo      
-sonido_pisadas_activo = false;
+// Frames donde el pie toca el suelo      
+paso_frames = [1]; 
 ultimo_frame_paso = -1; 
 
 
@@ -26,3 +44,5 @@ function array_contains(arr, value) {
     }
     return false;
 }
+
+//Entregar periódico

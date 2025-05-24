@@ -19,6 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"House_instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_226056C1","properties":[],"isDnd":false,"objectId":{"name":"obj_house_manager","path":"objects/obj_house_manager/obj_house_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.073047854,"scaleY":0.07692309,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1EB1BC2B","properties":[],"isDnd":false,"objectId":{"name":"obj_house_destroyer","path":"objects/obj_house_destroyer/obj_house_destroyer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":19.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-704.0,"y":-64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4847007C","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":608.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_18D47E00","spriteId":{"name":"spr_house","path":"sprites/spr_house/spr_house.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-96.0,},
@@ -42,6 +43,7 @@
   "instanceCreationOrder": [
     {"name":"inst_226056C1","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1EB1BC2B","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4847007C","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

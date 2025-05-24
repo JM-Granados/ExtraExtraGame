@@ -13,3 +13,4 @@ if (x < -sprite_width) {  // Si está completamente fuera a la izquierda
 }
 
 
+//Para entregarlo
