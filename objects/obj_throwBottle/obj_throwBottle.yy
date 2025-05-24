@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
-  "spriteId": null,
+  "name": "obj_throwBottle",
+  "spriteId": {
+    "name": "spr_bottle_projectile",
+    "path": "sprites/spr_bottle_projectile/spr_bottle_projectile.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
