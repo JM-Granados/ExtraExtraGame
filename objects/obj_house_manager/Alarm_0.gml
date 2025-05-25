@@ -1,4 +1,8 @@
 
+if (global.paused) {
+    exit; // Skip updating while paused
+}
+
 //Change when there is the logic of players' life
 if(true) {
 

@@ -1,3 +1,7 @@
+if (global.paused) {
+    exit; // Skip updating while paused
+}
+
 // Stop when reaching the center of the screen
 if (x >= display_get_width() / 6) {
     x = display_get_width() / 6;
@@ -13,4 +17,12 @@ if (throw_timer <= 0) {
 
     // Reset the timer to another 3–6 seconds
     throw_timer = irandom_range(room_speed * 3, room_speed * 6);
+}
+
+// Red flash when hit
+if (is_hit) {
+    hit_timer -= 1;
+    if (hit_timer <= 0) {
+        is_hit = false;
+    }
 }

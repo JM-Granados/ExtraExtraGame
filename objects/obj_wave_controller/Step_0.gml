@@ -1,17 +1,18 @@
-// No enemies on screen and we're not already counting
-if (instance_number(obj_enemy) == 0 && wave_delay == -1) {
-    wave_delay = room_speed * 10; // Start 10-second countdown
+if (global.paused) {
+    exit; // Skip updating while paused
 }
 
-// If timer is counting
+if (instance_number(obj_enemy) == 0 && wave_delay == -1) {
+    wave_delay = room_speed * 10;
+}
+
 if (wave_delay > 0) {
     wave_delay -= 1;
 }
 
-// Time's up — spawn new wave
 if (wave_delay == 0) {
-    wave_delay = -1; // Reset timer
-
-    // Call a script or spawn enemies directly here
+    wave_delay = -1;
+    round_num += 1;
+	show_debug_message("Spawning wave: round_num = " + string(round_num));
     spawn_enemy_wave();
 }

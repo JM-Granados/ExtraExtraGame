@@ -1,3 +1,7 @@
+if (global.paused) {
+    exit; // Skip updating while paused
+}
+
 // Spin
 image_angle += angle_speed;
 
