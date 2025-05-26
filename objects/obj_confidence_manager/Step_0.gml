@@ -11,6 +11,10 @@ if(confidence_score > overconfidence_score){
 	}
 
 	instance_create_layer(0, 916, layer, obj_overconfidence)
+	show_debug_message("¡El jugador se convirtió en monstruo!");
+	script_player_becomes_monster();
+
+
 }
 
 

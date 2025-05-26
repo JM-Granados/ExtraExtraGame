@@ -14,6 +14,7 @@ margen_sprite = 32; // Ajusta según el tamaño de tu sprite
 // Velocidad del mapa
 map_speed = 4;
 
+global.paused = false
 
 //Jugador
 // Velocidad de movimiento

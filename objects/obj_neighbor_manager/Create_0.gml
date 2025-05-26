@@ -3,4 +3,4 @@
 
 alarm[0] = room_speed;
 // every 8s a neighbor will spawn
-help_frequency = 8
+help_frequency = 10

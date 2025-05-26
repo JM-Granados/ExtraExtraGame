@@ -8,4 +8,8 @@ if (other.hp <= 0) {
     instance_destroy(other);
 }
 
+with(obj_confidence_manager){
+	obj_confidence_manager.confidence_score += 100 
+}
+
 instance_destroy(); // destroy the paper
