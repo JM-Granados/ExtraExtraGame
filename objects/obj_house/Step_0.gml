@@ -5,5 +5,7 @@ if (global.paused) {
     exit; // Skip updating while paused
 }
 
-hspeed = v_speed
-
+if (global.monster) {
+    v_speed = 4;
+}
+hspeed = v_speed;

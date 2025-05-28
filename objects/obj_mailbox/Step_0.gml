@@ -5,9 +5,9 @@ if (global.paused) {
     exit; // Skip updating while paused
 }
 
-
-if (global.monster) {
-    v_speed = 4;
+if(delivered){
+	sprite_index = spr_open_mailbox
 }
-hspeed = v_speed;
+
+hspeed = v_speed
 

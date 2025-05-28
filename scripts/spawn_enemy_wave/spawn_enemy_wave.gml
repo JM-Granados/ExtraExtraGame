@@ -2,7 +2,7 @@ function spawn_enemy_wave() {
     var spacing = 150;
     var start_y = 500;
 
-    var hp_amount = 1 + floor(round_num / 3);
+    var hp_amount = 1 + floor(round_num / 2);
 	show_debug_message("Enemy HP this wave: " + string(hp_amount));
 
     for (var i = 0; i < 3; i++) {
