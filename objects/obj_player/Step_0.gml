@@ -120,6 +120,11 @@ if (keyboard_check_pressed(ord("T")) && contador_cooldown <= 0) {
     // Crear el periódico
     var newspaper = instance_create_layer(x, y, "House_instances", obj_throwPaper);
 	
+	newspaper.entrega = false
+	newspaper.direccion = 180;      // 180 grados = izquierda
+    newspaper.velocidad = 15;       // Velocidad rápida
+    newspaper.rotacion = -15;       // Rotación antihoraria
+	
 	// Ajustar posición inicial (evitar que aparezca dentro del jugador)
     newspaper.x = x - 20;  // Offset izquierdo
     newspaper.y = y;
@@ -129,4 +134,26 @@ if (keyboard_check_pressed(ord("T")) && contador_cooldown <= 0) {
 }
 
 
-//Entregar periódicos
+// Al presionar Y y no estar en cooldown
+if (keyboard_check_pressed(ord("Y")) && contador_cooldown <= 0) {
+    contador_cooldown = cooldown_lanzar;
+	
+    // Crear el periódico
+    var newspaper = instance_create_layer(x, y, "House_instances", obj_throwPaper);
+	
+	newspaper.entrega = true
+	newspaper.direccion = 90;      // 180 grados = izquierda
+    newspaper.velocidad = 8;       // Velocidad rápida
+    newspaper.rotacion = -8;       // Rotación antihoraria
+	
+	// Ajustar posición inicial (evitar que aparezca dentro del jugador)
+    newspaper.x = x;  // Offset izquierdo
+    newspaper.y = y - 20;
+	
+	sonido = audio_play_sound(snd_deliver, 1, false); // Sonido en loop
+	distancia_total = y - 350; // Distancia a recorrer (ajusta si lanzas desde otra posición)
+	duracion_sonido = (distancia_total / 8) / room_speed; // Duración en segundos
+	// Ajustar velocidad de reproducción para que coincida con el tiempo de movimiento
+	audio_sound_pitch(sonido, audio_sound_length(snd_deliver) / duracion_sonido);
+	
+}

@@ -11,3 +11,6 @@ rotacion = -10;
 scale = 0.2
 image_xscale = scale;
 image_yscale = scale;
+
+entrega = false;
+detenido = false;
