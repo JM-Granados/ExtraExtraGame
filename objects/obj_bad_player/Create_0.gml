@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-transformed = false;
-
 //MAPA
+scale = 8
+image_xscale = scale;
+image_yscale = scale;
+
+
 // Límites del mapa (ajusta según el tamaño de tu room)
 limite_izquierdo = 0;          // Borde izquierdo de la pantalla
 limite_derecho = room_width;   // Borde derecho de la room
@@ -14,7 +17,7 @@ limite_inferior = 866; // Borde inferior
 margen_sprite = 32; // Ajusta según el tamaño de tu sprite
 
 // Velocidad del mapa
-map_speed = 4;
+map_speed = -4;
 
 global.paused = false
 
@@ -47,5 +50,7 @@ function array_contains(arr, value) {
     }
     return false;
 }
+
+
 
 //Entregar periódico

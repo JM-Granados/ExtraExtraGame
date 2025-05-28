@@ -53,6 +53,7 @@
     {"id":{"name":"spr_help_asked_notifier","path":"sprites/spr_help_asked_notifier/spr_help_asked_notifier.yy",},"order":0,},
     {"id":{"name":"spr_settings","path":"sprites/spr_settings/spr_settings.yy",},"order":3,},
     {"id":{"name":"snd_puff","path":"sounds/snd_puff/snd_puff.yy",},"order":0,},
+    {"id":{"name":"obj_bad_player","path":"objects/obj_bad_player/obj_bad_player.yy",},"order":2,},
     {"id":{"name":"spr_main_walk_up","path":"sprites/spr_main_walk_up/spr_main_walk_up.yy",},"order":4,},
     {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},"order":1,},
     {"id":{"name":"obj_wave_controller","path":"objects/obj_wave_controller/obj_wave_controller.yy",},"order":3,},

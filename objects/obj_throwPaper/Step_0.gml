@@ -30,7 +30,7 @@ if (entrega) {
 	}
 	else {
 	    // Comportamiento al estar detenido (opcional)
-	    x -= obj_player.map_speed;
+	    x -= 4;
 		// Destruir al salir de la pantalla
 		if (x < -sprite_width) {
 		    instance_destroy();
