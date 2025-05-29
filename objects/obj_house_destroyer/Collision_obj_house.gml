@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 // Verificar si la casa fue destruida sin entregar periódico
+/*
 if (!other.delivered && !other.destroyed) {
     with (obj_confidence_manager) {
         confidence_score -= 100;
@@ -9,7 +10,7 @@ if (!other.delivered && !other.destroyed) {
     }
     other.destroyed = true; // Marcar como destruida
 }
-
+*/
 
 instance_destroy(other)
 

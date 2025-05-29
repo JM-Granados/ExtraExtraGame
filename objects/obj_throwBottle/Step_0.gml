@@ -9,3 +9,7 @@ image_angle += angle_speed;
 if (x > display_get_width()) {
     instance_destroy();
 }
+
+if (x < -sprite_width * image_xscale) {
+    instance_destroy();
+}
