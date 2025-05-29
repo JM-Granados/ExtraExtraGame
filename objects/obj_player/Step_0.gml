@@ -157,3 +157,11 @@ if (keyboard_check_pressed(ord("Y")) && contador_cooldown <= 0) {
 	audio_sound_pitch(sonido, audio_sound_length(snd_deliver) / duracion_sonido);
 	
 }
+
+// Red flash when hit
+if (is_hit) {
+    hit_timer -= 1;
+    if (hit_timer <= 0) {
+        is_hit = false;
+    }
+}

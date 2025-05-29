@@ -47,3 +47,11 @@ function array_contains(arr, value) {
     }
     return false;
 }
+
+
+audio_stop_sound(snd_intro);
+
+audio_play_sound(snd_game, 1, true);
+
+is_hit = false;
+hit_timer = 0;

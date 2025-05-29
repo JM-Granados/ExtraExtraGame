@@ -52,5 +52,6 @@ function array_contains(arr, value) {
 }
 
 
-
+audio_stop_sound(snd_game);
+audio_play_sound(snd_final1, 1, true);
 //Entregar periódico

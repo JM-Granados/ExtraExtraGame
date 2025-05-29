@@ -12,4 +12,6 @@ with(obj_confidence_manager){
 	obj_confidence_manager.confidence_score += 100 
 }
 
+audio_play_sound(snd_hurt, 1, false);
+
 instance_destroy(); // destroy the paper
