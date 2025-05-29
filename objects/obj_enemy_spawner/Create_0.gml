@@ -8,7 +8,7 @@ for (var i = 0; i < 3; i++) {
     var chosen_sprite = choose(spr_enemy_1, spr_enemy_2, spr_enemy_3, spr_enemy_4, spr_enemy_5);
 
     // Create the enemy (position will be fixed after scaling)
-    var enemy = instance_create_layer(0, start_y + i * spacing, "Enemy_instances", obj_enemy);
+    var enemy = instance_create_layer(1728, start_y + i * spacing, "Enemy_instances", obj_enemy);
 
     // Set sprite before scaling
     enemy.sprite_index = chosen_sprite;

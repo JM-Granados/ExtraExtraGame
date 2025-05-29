@@ -2,16 +2,23 @@ if (global.paused) {
     exit; // Skip updating while paused
 }
 
-// Stop when reaching the center of the screen
-if (x >= display_get_width() / 6) {
-    x = display_get_width() / 6;
-    hspeed = 0;
+if (!global.monster) {
+    if (x >= display_get_width() / 6) {
+        x = display_get_width() / 6;
+        hspeed = 0;
+    }
+} else {
+    if (x <= display_get_width() - display_get_width() / 6) {
+        x = display_get_width() - display_get_width() / 6;
+        hspeed = 0;
+    }
 }
+
 
 // Countdown the throw timer
 throw_timer -= 1;
 
-if (throw_timer <= 0) {
+if (throw_timer <= 0 && !global.monster) {
     // Throw the bottle
     instance_create_layer(x, y, "Projectile_instances", obj_throwBottle);
 

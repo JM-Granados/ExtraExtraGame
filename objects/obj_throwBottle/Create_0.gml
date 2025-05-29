@@ -1,5 +1,9 @@
 // Speed to the right
-hspeed = 4;
+if (!global.monster) {
+    hspeed = 4;
+} else {
+    hspeed = -4;  
+}
 
 image_xscale = 0.08;
 image_yscale = 0.08;
