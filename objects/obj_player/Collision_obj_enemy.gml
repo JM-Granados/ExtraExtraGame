@@ -1,4 +1,6 @@
-// Destroy the bottle on collision with the player
+/// @description Insert description here
+// You can write your code in this editor
+
 
 with (obj_confidence_manager) {
 	current_confidence = obj_confidence_manager.confidence_score
@@ -9,6 +11,3 @@ with (obj_confidence_manager) {
 	}
 }
 
-
-
-instance_destroy();

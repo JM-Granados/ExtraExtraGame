@@ -8,7 +8,7 @@ image_yscale = scale;
 
 
 // Límites del mapa (ajusta según el tamaño de tu room)
-limite_izquierdo = 0;          // Borde izquierdo de la pantalla
+limite_izquierdo = 625;          // Borde izquierdo de la pantalla
 limite_derecho = room_width;   // Borde derecho de la room
 limite_superior = 380;           // Borde superior
 limite_inferior = 866; // Borde inferior
@@ -25,7 +25,7 @@ global.paused = false
 // Velocidad de movimiento
 velocidad = 5;
 
-anim_velocidad = 0.4
+anim_velocidad = 0.08
 
 // Estado para controlar si se mueve o no
 moviendo = false;

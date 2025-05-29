@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
-  "spriteId": null,
+  "name": "obj_victim",
+  "spriteId": {
+    "name": "spr_main_character",
+    "path": "sprites/spr_main_character/spr_main_character.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -29,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
 }

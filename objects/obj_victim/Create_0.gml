@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-transformed = false;
-
 //MAPA
+scale = 4
+image_xscale = scale;
+image_yscale = scale;
+
+
 // Límites del mapa (ajusta según el tamaño de tu room)
 limite_izquierdo = 0;          // Borde izquierdo de la pantalla
 limite_derecho = room_width;   // Borde derecho de la room
@@ -22,7 +25,7 @@ global.paused = false
 // Velocidad de movimiento
 velocidad = 5;
 
-anim_velocidad = 0.4
+anim_velocidad = 0.8
 
 // Estado para controlar si se mueve o no
 moviendo = false;
@@ -47,3 +50,7 @@ function array_contains(arr, value) {
     }
     return false;
 }
+
+
+is_hit = false;
+hit_timer = 0;
