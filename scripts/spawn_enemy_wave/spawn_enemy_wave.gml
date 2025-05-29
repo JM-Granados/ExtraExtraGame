@@ -3,7 +3,12 @@ function spawn_enemy_wave() {
     var start_y = 500;
 
     var hp_amount = 1 + floor(round_num / 2);
-	show_debug_message("Enemy HP this wave: " + string(hp_amount));
+    show_debug_message("Enemy HP this wave: " + string(hp_amount));
+
+    // Increase bottle speed every 2 rounds
+    if (round_num mod 2 == 0) {
+        global.bottle_speed += 0.5;
+    }
 
     for (var i = 0; i < 3; i++) {
         var chosen_sprite = choose(spr_enemy_1, spr_enemy_2, spr_enemy_3, spr_enemy_4, spr_enemy_5);

@@ -1,6 +1,6 @@
 // Speed to the right
 if (!global.monster) {
-    hspeed = 4;
+    hspeed = global.bottle_speed;
 } else {
     hspeed = -4;  
 }
