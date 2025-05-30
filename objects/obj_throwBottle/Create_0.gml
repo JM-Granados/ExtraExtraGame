@@ -2,7 +2,7 @@
 if (!global.monster) {
     hspeed = global.bottle_speed;
 } else {
-    hspeed = -4;  
+    hspeed = -global.bottle_speed;  
 }
 
 image_xscale = 0.08;

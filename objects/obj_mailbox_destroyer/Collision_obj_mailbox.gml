@@ -7,6 +7,8 @@ if (!other.delivered && !other.destroyed) {
         confidence_score = max(confidence_score, 0); // Evitar valores negativos
     }
     other.destroyed = true; // Marcar como destruida
+
+	audio_play_sound(snd_undelivered, 1, false);
 }
 
 

@@ -14,5 +14,7 @@ if (wave_delay == 0) {
     wave_delay = -1;
     round_num += 1;
 	show_debug_message("Spawning wave: round_num = " + string(round_num));
-    spawn_enemy_wave();
+	if (!obj_player.transformed) {
+		spawn_enemy_wave();
+	}
 }

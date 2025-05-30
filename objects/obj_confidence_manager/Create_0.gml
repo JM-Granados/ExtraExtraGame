@@ -3,7 +3,7 @@
 
 confidence_score = 50
 confidence_score_string = ""
-overconfidence_score = 200
+overconfidence_score = 6000
 
 instance_create_layer(0, 896, layer, obj_confidence_counter_label)
 

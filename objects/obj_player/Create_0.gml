@@ -33,7 +33,7 @@ last_horizontal = "none";
 last_vertical = "none";     
 
 // Frames de espera entre lanzamientos
-cooldown_lanzar = 30;  
+cooldown_lanzar = 50;  
 contador_cooldown = 0;
 
 // Frames donde el pie toca el suelo      

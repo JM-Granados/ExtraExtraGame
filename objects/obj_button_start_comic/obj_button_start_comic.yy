@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_back_to_main_menu",
+  "name": "obj_button_start_comic",
   "spriteId": {
-    "name": "spr_back_to_game_menu",
-    "path": "sprites/spr_back_to_game_menu/spr_back_to_game_menu.yy",
+    "name": "spr_start_game",
+    "path": "sprites/spr_start_game/spr_start_game.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Over",
-    "path": "folders/Objects/Game Over.yy",
+    "name": "Main Menu",
+    "path": "folders/Objects/Main Menu.yy",
   },
 }

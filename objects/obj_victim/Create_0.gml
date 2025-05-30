@@ -54,3 +54,4 @@ function array_contains(arr, value) {
 
 is_hit = false;
 hit_timer = 0;
+hit_counter = 0;
